@@ -1,0 +1,65 @@
+body {
+    margin: 0;
+}
+
+header{
+    background-color:#0B1C51;
+}
+
+header h1 {
+    color: #fff;
+    font-size: 52px;
+    text-align: center;
+    /* margin = space around the element's border */
+    margin:0; 
+    /* padding = the space between the border and the element's content */
+    padding-top: 20px;
+}
+
+header nav {
+    display: flex;
+    justify-content: center;
+}
+
+header nav ul {
+    display: flex;
+    list-style: none;
+    padding-left:0;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 20px 0 0;
+}
+
+header nav ul li:last-child a {
+    /* Removes the margin to the right of the last anchor tag 
+       so that the nav appears centered. */
+    margin-right: 0;
+  }
+
+
+@media all and (min-width: 600px) {
+    header{
+        display: flex;
+        justify-content: space-between;
+        /* changes the spacing; first # is top and bottom, second is left and right */
+        padding:0 30px;
+    }
+
+    header h1 {
+        font-size: 48px;
+        margin: 14px 0;
+        padding-top:0;
+    }
+
+    header nav {
+        padding: 19px 0;
+    }
+
+    header nav ul li a:hover {
+        color: #bdbdbd;
+    }
+}
+
